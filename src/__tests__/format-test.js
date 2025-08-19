@@ -32,6 +32,9 @@ describe('Formatting dates', () => {
       formatWithLocale(new Date('03/03/2021 11:45:21 PM'), 'hh:mm')
     ).toEqual('11:45')
     expect(
+      formatWithLocale(new Date('2025-08-18 19:01:11'), 'MMM d HH:mm:ss')
+    ).toEqual('Aug 18 19:01:11')
+    expect(
       formatWithLocale(new Date('03/03/2021 11:45:21 PM'), 'HH:mm')
     ).toEqual('23:45')
     expect(
